@@ -1,0 +1,101 @@
+.admin-dashboard-card {
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 2px 16px #13880814;
+  padding: 34px 36px 28px 36px;
+  max-width: 420px;
+  margin: 0 auto 18px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.admin-dashboard-title {
+  font-size: 1.6rem;
+  color: #138808;
+  margin-bottom: 12px;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+  text-align: center;
+}
+.admin-dashboard-description {
+  color: #444;
+  font-size: 1.04rem;
+  margin-bottom: 18px;
+  text-align: center;
+}
+
+.admin-dashboard-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+.admin-dashboard-list > li {
+  margin-bottom: 15px;
+}
+
+.admin-dashboard-button {
+  width: 100%;
+  background: #138808;
+  color: #fff;
+  border: none;
+  border-radius: 7px;
+  padding: 15px 0;
+  font-size: 1.08rem;
+  font-weight: bold;
+  letter-spacing: 1.2px;
+  cursor: pointer;
+  margin-bottom: 0;
+  transition: background 0.14s, box-shadow 0.16s;
+  box-shadow: 0 2px 8px #13880813;
+}
+.admin-dashboard-button:hover,
+.admin-dashboard-button:focus {
+  background: #0f6606;
+}
+
+.admin-dashboard-disabled {
+  background: #e0e0e0 !important;
+  color: #999 !important;
+  cursor: not-allowed !important;
+  box-shadow: none !important;
+}
+
+.admin-dashboard-sublist {
+  margin-top: 8px;
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style: none;
+}
+.admin-dashboard-sublist li {
+  margin-bottom: 8px;
+}
+.admin-dashboard-sub-button {
+  width: 100%;
+  background: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 7px;
+  padding: 11px 0;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: 0;
+  transition: background 0.13s;
+}
+.admin-dashboard-sub-button:hover,
+.admin-dashboard-sub-button:focus {
+  background: #267a23;
+}
+
+@media (max-width: 600px) {
+  .admin-dashboard-card {
+    padding: 17px 2vw 15px 2vw;
+    min-width: 200px;
+    font-size: .99rem;
+  }
+  .admin-dashboard-title {
+    font-size: 1.12rem;
+  }
+}

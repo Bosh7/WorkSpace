@@ -1,0 +1,128 @@
+.schedule-card {
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 2px 16px #13880814;
+  padding: 32px 36px 28px 36px;
+  max-width: 900px;
+  margin: 0 auto 32px auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.schedule-title {
+  font-size: 1.18rem;
+  color: #138808;
+  margin-bottom: 22px;
+  font-weight: bold;
+  text-align: center;
+  letter-spacing: 1.5px;
+}
+
+.schedule-filter-bar {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 22px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.schedule-input, .schedule-select {
+  padding: 8px 13px;
+  border-radius: 7px;
+  border: 1.3px solid #a3e2b7;
+  font-size: 1rem;
+  min-width: 100px;
+  transition: border 0.13s;
+}
+.schedule-input:focus, .schedule-select:focus {
+  border: 2px solid #138808;
+  outline: none;
+}
+.schedule-btn, .schedule-add-btn {
+  background: #138808;
+  color: #fff;
+  border: none;
+  border-radius: 7px;
+  padding: 8px 19px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.13s;
+}
+.schedule-btn:hover, .schedule-btn:focus,
+.schedule-add-btn:hover, .schedule-add-btn:focus {
+  background: #0f6606;
+}
+.schedule-add-block {
+  background: #f8fbf8;
+  border-radius: 9px;
+  border: 1px solid #a3e2b7;
+  padding: 15px 13px;
+  margin-bottom: 22px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.schedule-add-block input,
+.schedule-add-block select {
+  margin-right: 5px;
+}
+.schedule-add-block h4 {
+  font-size: 1.01rem;
+  color: #138808;
+  margin-right: 15px;
+  font-weight: 500;
+}
+
+.schedule-table-wrapper {
+  margin-top: 8px;
+  overflow-x: auto;
+}
+.schedule-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #f7faf7;
+}
+.schedule-table th, .schedule-table td {
+  border: 1.1px solid #b7e0bd;
+  padding: 10px 7px;
+  text-align: center;
+}
+.schedule-table th {
+  background: #e0f4e3;
+  color: #138808;
+  font-weight: bold;
+}
+.schedule-del-btn {
+  background: #f44336;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 5px 14px;
+  font-size: 0.97rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.13s;
+}
+.schedule-del-btn:hover, .schedule-del-btn:focus {
+  background: #b71c1c;
+}
+
+@media (max-width: 700px) {
+  .schedule-card {
+    padding: 14px 2vw 14px 2vw;
+    min-width: 200px;
+    font-size: .97rem;
+  }
+  .schedule-title {
+    font-size: 1rem;
+  }
+  .schedule-table th, .schedule-table td {
+    font-size: 0.95rem;
+    padding: 7px 3px;
+  }
+  .schedule-add-block {
+    padding: 7px 5px;
+    gap: 6px;
+  }
+}

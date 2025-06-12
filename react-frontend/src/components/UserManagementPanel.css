@@ -1,0 +1,52 @@
+.usermgmt-panel {
+  background: #fff;
+  padding: 26px 28px 18px 28px;
+  border-radius: 12px;
+  box-shadow: 0 2px 14px #13880812;
+  margin: 32px auto 0 auto;
+  max-width: 420px;
+  min-width: 190px;
+  display: flex;
+  flex-direction: column;
+}
+.usermgmt-panel h3 {
+  color: #138808;
+  font-weight: bold;
+  margin-bottom: 14px;
+  text-align: center;
+  letter-spacing: 1px;
+}
+.usermgmt-btn-group {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 15px;
+}
+.usermgmt-btn {
+  padding: 11px 15px;
+  font-size: 1.03rem;
+  background: #138808;
+  color: #fff;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+  text-align: left;
+  font-weight: 600;
+  transition: background 0.13s;
+  letter-spacing: 1px;
+}
+.usermgmt-btn:hover {
+  background: #0eab6c;
+}
+
+@media (max-width: 540px) {
+  .usermgmt-panel {
+    padding: 12px 2vw 10px 2vw;
+    min-width: 140px;
+    font-size: .97rem;
+  }
+  .usermgmt-btn {
+    font-size: .97rem;
+    padding: 10px 10px;
+  }
+}

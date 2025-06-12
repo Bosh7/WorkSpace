@@ -1,0 +1,61 @@
+.shistory-card {
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 2px 16px #13880812;
+  padding: 28px 32px 24px 32px;
+  max-width: 680px;
+  margin: 0 auto 28px auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.shistory-title {
+  font-size: 1.11rem;
+  color: #138808;
+  margin-bottom: 18px;
+  font-weight: bold;
+  text-align: center;
+  letter-spacing: 1.2px;
+}
+
+.shistory-msg {
+  color: #888;
+  text-align: center;
+  margin: 24px 0;
+  font-size: 1.03rem;
+}
+
+.shistory-table-wrapper {
+  margin-top: 4px;
+  overflow-x: auto;
+}
+.shistory-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #f7faf7;
+}
+.shistory-table th, .shistory-table td {
+  border: 1.1px solid #b7e0bd;
+  padding: 8px 7px;
+  text-align: center;
+}
+.shistory-table th {
+  background: #e0f4e3;
+  color: #138808;
+  font-weight: bold;
+}
+
+@media (max-width: 600px) {
+  .shistory-card {
+    padding: 10px 2vw 10px 2vw;
+    min-width: 180px;
+    font-size: .97rem;
+  }
+  .shistory-title {
+    font-size: 1rem;
+  }
+  .shistory-table th, .shistory-table td {
+    font-size: 0.94rem;
+    padding: 6px 3px;
+  }
+}

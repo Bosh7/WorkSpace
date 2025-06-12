@@ -1,0 +1,77 @@
+.usercreate-panel {
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 2px 14px #13880814;
+  padding: 30px 32px 20px 32px;
+  margin: 0 auto 22px auto;
+  margin-top: 32px;
+  max-width: 420px;
+  min-width: 210px;
+  display: flex;
+  flex-direction: column;
+}
+.usercreate-panel h3 {
+  color: #138808;
+  font-weight: bold;
+  margin-bottom: 18px;
+  text-align: center;
+}
+.usercreate-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.usercreate-input {
+  margin-top: 5px;
+  padding: 8px 12px;
+  font-size: 1rem;
+  border-radius: 7px;
+  border: 1.3px solid #a3e2b7;
+  width: 100%;
+  box-sizing: border-box;
+  transition: border 0.13s;
+}
+.usercreate-input:focus {
+  border: 2px solid #138808;
+  outline: none;
+}
+.usercreate-btn {
+  margin-top: 12px;
+  padding: 12px 0;
+  background: #138808;
+  color: #fff;
+  border: none;
+  border-radius: 7px;
+  font-size: 1.05rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.14s;
+  letter-spacing: 2px;
+}
+.usercreate-btn:disabled {
+  background: #b7e0bd;
+  color: #eee;
+  cursor: not-allowed;
+}
+.usercreate-panel label {
+  font-weight: 500;
+  color: #226611;
+  letter-spacing: 1px;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 500px) {
+  .usercreate-panel {
+    padding: 10px 2vw 8px 2vw;
+    min-width: 140px;
+    font-size: .97rem;
+  }
+  .usercreate-panel h3 {
+    font-size: 1rem;
+  }
+  .usercreate-btn {
+    font-size: .97rem;
+    padding: 10px 0;
+  }
+}

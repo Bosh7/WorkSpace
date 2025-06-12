@@ -1,0 +1,135 @@
+.reglist-card {
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 2px 16px #13880814;
+  padding: 32px 36px 28px 36px;
+  max-width: 850px;
+  margin: 0 auto 28px auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.reglist-title {
+  font-size: 1.18rem;
+  color: #138808;
+  margin-bottom: 20px;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+  text-align: center;
+}
+
+.reglist-msg {
+  color: #888;
+  text-align: center;
+  margin: 24px 0;
+  font-size: 1.05rem;
+}
+
+.reglist-table-wrapper {
+  margin-top: 6px;
+  overflow-x: auto;
+}
+.reglist-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 1rem;
+  background: #f7faf7;
+  margin-bottom: 18px;
+}
+.reglist-table th, .reglist-table td {
+  border: 1.1px solid #b7e0bd;
+  padding: 9px 7px;
+  text-align: center;
+}
+.reglist-table th {
+  background: #e0f4e3;
+  color: #138808;
+  font-weight: bold;
+}
+
+.reglist-pagination {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 8px;
+}
+.reglist-page-btn {
+  background: #f5f7f4;
+  color: #138808;
+  border: 1.2px solid #b1e2b6;
+  border-radius: 5px;
+  padding: 7px 16px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.13s, color 0.13s;
+}
+.reglist-page-btn.active, .reglist-page-btn:hover, .reglist-page-btn:focus {
+  background: #138808;
+  color: #fff;
+  border: 1.5px solid #138808;
+}
+
+@media (max-width: 700px) {
+  .reglist-card {
+    padding: 12px 2vw 12px 2vw;
+    min-width: 200px;
+    font-size: .97rem;
+  }
+  .reglist-title {
+    font-size: 1rem;
+  }
+  .reglist-table th, .reglist-table td {
+    font-size: 0.95rem;
+    padding: 7px 5px;
+  }
+}
+
+
+.reglist-pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 24px 0 0 0;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.reglist-page-btn {
+  min-width: 36px;
+  height: 36px;
+  margin: 0 2px;
+  padding: 0 10px;
+  border: 1.2px solid #138808;
+  border-radius: 8px;
+  background: #fff;
+  color: #138808;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.15s, color 0.15s;
+  outline: none;
+}
+.reglist-page-btn:hover:not(.active):not(:disabled) {
+  background: #f2fff5;
+}
+.reglist-page-btn.active {
+  background: #138808;
+  color: #fff;
+  border-color: #138808;
+  cursor: default;
+}
+.reglist-page-btn:disabled {
+  background: #eee;
+  color: #bbb;
+  cursor: not-allowed;
+}
+
+.reglist-ellipsis {
+  min-width: 28px;
+  text-align: center;
+  color: #aaa;
+  font-size: 1.1rem;
+  user-select: none;
+  pointer-events: none;
+  margin: 0 2px;
+}

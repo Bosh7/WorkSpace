@@ -1,0 +1,137 @@
+.add-schedule-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  margin-top: 24px;
+}
+
+.card {
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 2px 18px #13880812;
+  padding: 28px 26px 22px 26px;
+  min-width: 330px;
+  max-width: 440px;
+  flex: 1 1 350px;
+  margin-bottom: 18px;
+  display: flex;
+  flex-direction: column;
+}
+
+.schedule-form-card form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+}
+
+.form-row {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  margin-bottom: 8px;
+}
+
+.form-row label {
+  min-width: 70px;
+  font-weight: 500;
+  color: #11740d;
+}
+
+.form-row select {
+  flex: 1;
+  padding: 8px 12px;
+  border: 1.3px solid #a3e2b7;
+  border-radius: 7px;
+  font-size: 1rem;
+  background: #f8fbf8;
+}
+
+.add-schedule-btn {
+  margin-top: 14px;
+  width: 100%;
+  background: #138808;
+  color: #fff;
+  border: none;
+  border-radius: 7px;
+  padding: 13px 0;
+  font-size: 1.08rem;
+  font-weight: bold;
+  cursor: pointer;
+  letter-spacing: 2px;
+  transition: background 0.13s;
+}
+
+.add-schedule-btn:hover,
+.add-schedule-btn:focus {
+  background: #0f6606;
+}
+
+.schedule-list-card, .history-list-card {
+  margin-top: 8px;
+}
+
+.schedule-list-card h4,
+.history-list-card h4,
+.schedule-form-card h3 {
+  color: #138808;
+  margin-bottom: 14px;
+}
+
+.schedule-table {
+  border-collapse: collapse;
+  width: 100%;
+  background: #f7faf7;
+  font-size: 1rem;
+  margin-top: 5px;
+}
+
+.schedule-table th, .schedule-table td {
+  border: 1.3px solid #c6e9cb;
+  padding: 9px 7px;
+  text-align: center;
+}
+
+.schedule-table th {
+  background: #e1f6e1;
+  color: #138808;
+  font-weight: bold;
+}
+
+.del-btn {
+  background: #e53935;
+  color: #fff;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: .98rem;
+  font-weight: 600;
+  transition: background 0.12s;
+}
+
+.del-btn:hover, .del-btn:focus {
+  background: #b71c1c;
+}
+
+.no-schedule-msg {
+  margin: 14px 0 0 0;
+  color: #aaa;
+  text-align: center;
+}
+
+@media (max-width: 900px) {
+  .add-schedule-wrapper {
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+  }
+  .card {
+    min-width: 220px;
+    max-width: 99vw;
+    padding: 17px 2vw;
+  }
+}

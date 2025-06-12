@@ -1,0 +1,87 @@
+.schedtable-card {
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 2px 16px #13880813;
+  padding: 24px 26px 20px 26px;
+  max-width: 750px;
+  margin: 0 auto 24px auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.schedtable-title {
+  font-size: 1.07rem;
+  color: #138808;
+  margin-bottom: 18px;
+  font-weight: bold;
+  text-align: center;
+  letter-spacing: 1.1px;
+}
+
+.schedtable-table-wrapper {
+  overflow-x: auto;
+}
+
+.schedtable-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #f7faf7;
+  margin-bottom: 12px;
+}
+.schedtable-table th, .schedtable-table td {
+  border: 1.1px solid #b7e0bd;
+  padding: 9px 5px;
+  text-align: center;
+  min-width: 60px;
+  font-size: 1rem;
+}
+
+.schedtable-table th {
+  background: #e0f4e3;
+  color: #138808;
+  font-weight: bold;
+}
+
+.schedtable-cell {
+  transition: background 0.14s, color 0.12s;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 4px;
+}
+.schedtable-cell.active {
+  background: #f0fff0;
+  color: #226611;
+}
+.schedtable-cell.selected {
+  background: #6ce1b6;
+  color: #fff;
+  font-weight: bolder;
+}
+.schedtable-cell.disabled {
+  background: #eeeeee;
+  color: #bbb;
+  cursor: not-allowed;
+  font-weight: normal;
+}
+
+.schedtable-info {
+  margin-top: 15px;
+  text-align: center;
+  color: #0b8740;
+  font-size: 1.05rem;
+}
+
+@media (max-width: 650px) {
+  .schedtable-card {
+    padding: 8px 2vw 8px 2vw;
+    min-width: 160px;
+    font-size: .95rem;
+  }
+  .schedtable-title {
+    font-size: 1rem;
+  }
+  .schedtable-table th, .schedtable-table td {
+    font-size: 0.93rem;
+    padding: 5px 1px;
+  }
+}

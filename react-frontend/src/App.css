@@ -1,0 +1,235 @@
+:root {
+  --primary-green: #138808;
+  --hover-green: #0f6606;
+  --main-bg: #fff;
+  --sub-bg: #f7f7f7;
+  --border: #e0e0e0;
+  --gray-text: #555;
+  --main-radius: 12px;
+  --max-width: 900px;
+}
+
+/* 頁面根元素 */
+.app-root {
+  min-height: 100vh;
+  background: var(--sub-bg);
+  display: flex;
+  flex-direction: column;
+  font-family: "Noto Sans TC", Arial, "Microsoft JhengHei", sans-serif;
+}
+
+/* 頁首 */
+.header-bar {
+  width: 100%;
+  background: var(--primary-green);
+  color: #fff;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.07);
+}
+
+.header-content {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 68px;
+  padding: 0 28px;
+}
+
+.header-logo-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.header-logo {
+  font-size: 2rem;
+  vertical-align: middle;
+}
+
+.header-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+/* 登入登出區 */
+.header-login {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1rem;
+}
+
+/* 主要內容區 */
+.main-container {
+  flex: 1;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 32px 0 36px 0;
+  background: var(--sub-bg);
+}
+
+.main-section {
+  background: var(--main-bg);
+  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+  border-radius: var(--main-radius);
+  padding: 34px 44px 36px 44px;
+  min-width: 300px;
+  width: 100%;
+  max-width: var(--max-width);
+  margin: 24px auto 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.select-confirm-block {
+  margin: 28px 0 0 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+}
+
+/* 按鈕 */
+.btn {
+  background: var(--primary-green);
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 24px;
+  font-size: 1rem;
+  margin: 8px 8px 0 0;
+  cursor: pointer;
+  transition: background .15s;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.04);
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+.btn:hover, .btn:focus {
+  background: var(--hover-green);
+}
+
+.login-btn {
+  background: #1976d2;
+}
+.login-btn:hover {
+  background: #1653a5;
+}
+.logout-btn {
+  background: #e53935;
+}
+.logout-btn:hover {
+  background: #ad2a27;
+}
+.admin-btn {
+  background: #138808;
+}
+.admin-btn:hover {
+  background: #0f6606;
+}
+.back-btn {
+  background: #555;
+}
+.back-btn:hover {
+  background: #333;
+}
+.main-btn {
+  margin-top: 12px;
+}
+
+/* 按鈕群組 RWD 換行 */
+.main-btn-group {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 18px;
+}
+
+/* 頁尾 */
+.footer-bar {
+  width: 100%;
+  background: var(--primary-green);
+  color: #fff;
+  text-align: center;
+  font-size: 1rem;
+  padding: 15px 0;
+  margin-top: auto;
+  letter-spacing: 2px;
+}
+
+/* 響應式 RWD */
+@media (max-width: 900px) {
+  .main-section {
+    padding: 26px 10vw;
+  }
+  .header-content {
+    padding: 0 4vw;
+  }
+}
+@media (max-width: 600px) {
+  .main-section {
+    padding: 15px 2vw 20px 2vw;
+  }
+  .header-content {
+    padding: 0 2vw;
+    height: 50px;
+  }
+  .header-title {
+    font-size: 1.05rem;
+  }
+  .header-logo {
+    font-size: 1.15rem;
+  }
+  .footer-bar {
+    font-size: .95rem;
+    padding: 10px 0;
+  }
+}
+
+@media (max-width: 440px) {
+  .main-section {
+    padding: 10px 1vw 14px 1vw;
+  }
+  .header-content {
+    padding: 0 1vw;
+    height: 45px;
+  }
+}
+
+
+.float-home-btn {
+  position: fixed;
+  left: 50vw;
+  bottom: 60px;
+  transform: translateX(-50%);
+  z-index: 9999;
+  background: #138808;
+  color: #fff;
+  border: none;
+  border-radius: 40px;
+  box-shadow: 0 4px 18px #13880830, 0 1.5px 8px #3332;
+  font-size: 1.12rem;
+  font-weight: bold;
+  padding: 14px 38px;
+  cursor: pointer;
+  transition: background 0.14s;
+  letter-spacing: 2px;
+}
+
+.float-home-btn:hover, .float-home-btn:focus {
+  background: #0f6606;
+}
+
+@media (max-width: 600px) {
+  .float-home-btn {
+    bottom: 28px;
+    font-size: 1rem;
+    padding: 10px 26px;
+  }
+}
